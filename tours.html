@@ -5,9 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Package Tours </title>
+    <script src="tours.css"></script>
 </head>
 sdfgerygyrg
 <body>
+    <header>
+      <!-- Add logo, navigation menu, and search bar -->
+    </header>
+    
+  <main>
+    <section>
+      <h1>Explore Rajasthan with Indian Holiday Packages</h1>
+      <p>Discover the vibrant culture, history, and natural beauty of Rajasthan with our carefully curated packages.</p>
+      <a href="#packages">View Packages</a>
+    </section>
+    
+    <section>
+      <h2>Why Choose Indian Holiday?</h2>
+      <ul>
+        <li>Expert local guides</li>
+        <li>Flexible itineraries</li>
+        <li>24/7 customer support</li>
+        <li>Best price guarantee</li>
+      </ul>
+    </section>
+    
+    <section id="packages">
+      <h2>Our Packages</h2>
+      <ul>
+        <li>
+          <h3>Golden Triangle Tour</h3>
+          <img src="golden-triangle.jpg" alt="Golden Triangle Tour">
+          <p>Visit Delhi, Agra, and Jaipur in a 6-day tour that showcases the best of Northern India.</p>
+          <a href="#booking">Book Now</a>
+        </li>
+        
+        <li>
+          <h3>Rajasthan Heritage Tour</h3>
+          <img src="rajasthan-heritage.jpg" alt="Rajasthan Heritage Tour">
+          <p>Explore the magnificent forts and palaces of Rajasthan in a 12-day tour that takes you through Jaipur, Jodhpur, Udaipur, and more.</p>
+          <a href="#booking">Book Now</a>
+        </li>
+        
+        <li>
+          <h3>Wildlife Safari Tour</h3>
+          <img src="wildlife-safari.jpg" alt="Wildlife Safari Tour">
+          <p>Embark on a thrilling wildlife adventure in Ranthambore National Park, Sariska Tiger Reserve, and Keoladeo Ghana National Park.</p>
+          <a href="#booking">Book Now</a>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="booking">
+      <h2>Book Now</h2>
+      <p>Fill out the form below to book your Rajasthan package today.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="package">Package:</label>
+        <select id="package" name="package">
+          <option value="Golden Triangle Tour">Golden Triangle Tour</option>
+          <option value="Rajasthan Heritage Tour">Rajasthan Heritage Tour</option>
+          <option value="Wildlife Safari Tour">Wildlife Safari Tour</option>
+        </select>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+     
     
 </body>
 

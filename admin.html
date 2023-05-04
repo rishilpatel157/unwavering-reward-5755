@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="./styles/admin.css">
+
+</head>
+<body>
+   
+<main>
+    <form id="form">
+              <label for="states">Select a state :-</label>
+           <select name="states" id="states" required>
+            <option value="">Select States</option>
+            <option value="Rajastan">Rajastan</option>
+            <option value="Kerela">Kerela</option>
+            <option value="Himachal">Himachal</option>
+            <option value="Kashmir">Kashmir</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Goa">Goa</option>
+            <option value="Tamil">Tamil Nadu</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Ladakh">Leh Ladakh</option>
+        
+        </select>
+        
+        <label for="cardTitle">Card Title:</label>
+        <input type="text" id="cardTitle" name="cardTitle" required>
+      
+        <label for="cardImg">Card Image:</label>
+        <input type="text" id="cardImg" name="cardImg" required="htpps" >
+      
+        <label for="cities">Cities:</label>
+        <input type="text" id="cities" name="cities" required>
+      
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" required>
+      
+        <label for="period">Period:</label>
+        <input type="text" id="period" name="period" required>
+      
+        <label for="cardLargeImg">Card Large Image:</label>
+        <input type="text" id="cardLargeImg" name="cardLargeImg" required="htpps">
+      
+        <label for="overview">Overview:</label>
+        <textarea id="overview" name="overview" ></textarea required >
+       
+         <label for="highlight">Select No. of Trips Highlight</label >
+         <select id="highlight">
+             <option value="">0</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+             <option value="9">9</option>
+             <option value="10">10</option>
+         </select>
+          <div id="containerhighlight"> </div>
+
+          <label for="days">Select No. of tour days plan</label>
+          <select id="days">
+              <option value="">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          <div id="containerdays"></div>
+        <button type="submit" id="btn">Preview</button>
+      </form>
+
+      <div id="container">
+            
+      </div>
+    </main> 
+</body>
+ <script src="./scripts/admin.js"></script>
+</html>

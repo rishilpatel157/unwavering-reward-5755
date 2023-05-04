@@ -1,0 +1,24 @@
+
+
+main{
+    display: flex;
+}
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+form label {
+    margin: 10px 0 0 0 ;
+} 
+
+#containerdays{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}

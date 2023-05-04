@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: rgb(17,19,20);
+    --lightdark : rgb(32,43,53);
+    --blue :  #3dc6ee;
+    --darklight : rgb(26,27,29);
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+#top{
+    display: flex;
+}
+
+#top > div{
+    width: 50%;
+    height: 100vh;
+}
+#topleft {
+    
+    background-color:var(--dark);
+    padding: 120px 20px 50px 75px;
+}
+
+#topleft p:nth-child(1){
+    color: #3dc6ee;
+    font-size: 1.5rem;
+    
+}
+#topleft h1{
+    color: white;
+    font-size: 5rem;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+#topleft p{
+    color: gray;
+    margin: 1.3rem;
+    font-size: 1.3rem;
+}
+
+#topright img{
+    width: 550px;
+    margin-left: 50px;
+    margin-top: -100px;
+    position: relative;
+    right: 40px;
+}
+#place{
+    color: #3dc6ee;
+
+}
+
+#rocket img{
+    width: 90px;
+    height: 70px;
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+}
+
+#topright{
+/* padding-right: ; */
+    background-color:var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+
+#topright div{
+  width: 50%;
+  background-color: var(--lightdark);
+  
+  margin: auto;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  top: 150px;
+  
+}
+#locationtop{
+    display: flex;
+    width: 90%;
+    height: 125px;
+    margin-top: 75px;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+#locationtop label{
+    color: gray;
+}
+#locationtop >div{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--darklight);
+    
+    background-color: var(--lightdark);
+}
+
+#locationtop {
+    background-color: var(--lightdark);
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+#locationtop label{
+    font-size: 1.3rem;
+    padding-left: 10px;
+    
+    background-color:  var(--lightdark);
+}
+
+#locationtop >div > div{
+    width: 150px;
+    height: 30px;
+    padding-top: 5px;
+    background-color:  var(--lightdark);
+    
+}
+#locationtop>div>div>  i{
+    padding-right: 10px; 
+    padding-left: 10px; 
+    
+    border-radius: 50%;
+    padding: 10px;
+    background-color:  var(--dark);
+}
+.loc{
+    height: 30px;
+    padding-left: 45px;
+    color: white;
+    background-color:  var(--lightdark);
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+#locationtop button{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #3dc6ee;
+}
+
+#locationtop input{
+    height: 30px;
+    padding-left: 45px;
+    color: white;
+    background-color:  var(--lightdark);
+    margin-top: 20px;
+    font-size: 1.3rem;
+
+}
+
+#searchbtn > i {
+    font-size: 30px;
+}
+
+#mainsecond{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+}
+
+#mainsecond img{
+   border-radius: 15px;
+   width: 275px;
+   height: 350px;
+}
+
+
+#secondbottom{
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    padding-left: 80px;
+}
+
+#secondtop h4{
+    color: var(--blue);
+    font-size: 1.3rem;
+
+}
+
+
+#secondtop h1{
+    color: white;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+#secondtop {
+    padding: 50px 100px 0 80px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#directionbtn{
+    position: relative;
+    right: 0;
+    top: 40px;
+}
+
+#prev{
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: var(--blue);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+
+#next{
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: var(--blue);
+    border-radius: 15px;
+}
+
+.card h1{
+    position: relative;
+    top: -50px;
+    color: white;
+}
+

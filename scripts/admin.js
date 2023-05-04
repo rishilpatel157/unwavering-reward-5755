@@ -111,6 +111,7 @@ form.addEventListener("submit",function(e){
             document.getElementById("form").reset()
             container.innerHTML = ""
              console.log(api)
+             localStorage.setItem("api",JSON.stringify(api))
             }
             
         })

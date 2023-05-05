@@ -1,4 +1,4 @@
-{
+let dataAPI = {
     "rajastan": [
         {
             "stateName" : "Rajastan",
@@ -153,5 +153,4 @@
     ]
 }
          
-
-  
+console.log( dataAPI )  ;

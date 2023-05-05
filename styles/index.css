@@ -4,6 +4,161 @@
     box-sizing: border-box;
 }
 
+/* /////////////////////////////////////////////////////////////////// */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    background-color: var(--dark);
+}
+nav img{
+    width:225px;
+    position: absolute;
+    top:15px;
+    left:20px;
+}
+nav ul{
+    
+    float: right;
+    margin-right: 20px;
+
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+.navtext:hover {
+    color: white;
+  }
+  
+nav ul li a{
+    position: relative;
+    color: gray;
+    font-size: 19px;
+    /* font-weight: bold; */
+    padding: 5px 0;
+}
+.getStart{
+    font-size: 19px;
+    padding: 5px 15px;
+    background-color:#3dc6ee ;
+    /* font-weight: bold; */
+    border-radius: 12px;
+    border:none ;
+   
+}
+nav ul li a:before{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width:100%;
+    background-color: var(--blue);
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.4s linear;
+
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin:left;
+  
+}
+
+nav ul li a > .getStart:before{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width:100%;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.4s linear;
+
+}
+
+nav ul li a >.getStart:hover:before{
+    transform: scaleX(1);
+    transform-origin:left;
+  
+}
+
+label #btn,
+label #cancel{
+    color:white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+
+}
+
+@media (max-width:950px){
+
+    nav ul li a{
+        font-size: 17px;
+        /* position: ; */
+    }
+    
+}
+
+@media (max-width:769px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background-color: #111315;
+        top:80px;
+        left:100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+}
+#mainheader{
+    background-color: var(--dark);
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
 :root{
     --dark: rgb(17,19,20);
     --lightdark : rgb(32,43,53);
@@ -183,7 +338,6 @@ section{
     gap: 30px;
     text-align: center;
     align-items: center;
-    border: 1px solid black;
     padding-left: 80px;
 }
 
@@ -360,7 +514,9 @@ section{
     top: 80px;
 }
 
-
+/* laptop ///////////////////////////////////////////////////////////////////////////////////////////
+laptop ///////////////////////////////////////////////////////////////////////////////////////////
+laptop /////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width:1600px) {
     *{
         margin: 0;
@@ -390,7 +546,7 @@ section{
     #topleft {
         
         background-color:var(--dark);
-        padding: 50px 10px 30px 50px;
+        padding: 0px 10px 30px 50px;
     }
     
     #topleft p:nth-child(1){
@@ -411,9 +567,9 @@ section{
     }
     
     #topright img{
-        width: 120%;
+        width: 110%;
         margin-left: 50px;
-        margin-top: -130px;
+        margin-top: -160px;
         position: relative;
         right: 60px;
         
@@ -453,8 +609,8 @@ section{
     }
     #locationtop{
         display: flex;
-        width: 90%;
-        height: 10vh;
+        width: 75%;
+        height: 15vh;
         margin-top: 75px;
         justify-content:space-evenly;
         align-items: center;
@@ -538,10 +694,10 @@ section{
         background-color: var(--dark);
     }
     
-    #mainsecond img{
+    #mainsecond > div > div >img{
        border-radius: 15px;
-       width: 275px;
-       height: 350px;
+       width: 200px;
+       height: 275px;
     }
     
     
@@ -551,20 +707,19 @@ section{
         gap: 30px;
         text-align: center;
         align-items: center;
-        border: 1px solid black;
         padding-left: 80px;
     }
     
     #secondtop h4{
         color: var(--blue);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     
     }
     
     
     #secondtop h1{
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 20px;
     }
     #secondtop {
@@ -581,9 +736,9 @@ section{
     }
     
     #prev{
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
         background-color: var(--blue);
         border-radius: 15px;
         margin-right: 10px;
@@ -591,14 +746,14 @@ section{
     
     
     #next{
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
         background-color: var(--blue);
         border-radius: 15px;
     }
     
-    .card h1{
+    .card > h1{
         position: relative;
         top: -50px;
         color: white;
@@ -615,23 +770,27 @@ section{
     .dot:nth-child(1)
     {
         position: relative;
-        top: 100px;
-        left: 100px;
+        top: 300px;
+        /* left: 100px; */
+        /* background-color: blue; */
     }
     .dot:nth-child(2)
     {
         position: relative;
-        top: 50px;
+        top: 10px;
+        right: 50px;
         height: 20px;
         width: 20px;
         background-color: plum;
+        
     
     }
     
     .dot:nth-child(3)
     {
         position: relative;
-        top: 20px;
+        top: 0px;
+        left: 200px;
         height: 40px;
         width: 40px;
         background-color: plum;
@@ -640,51 +799,59 @@ section{
     .dot:nth-child(4)
     {
         position: relative;
-        top: 500px;
-        right: 100px;
+        top: 150px;
+        left: 200px;
         height: 30px;
         width: 30px;
         transition: all 1s;
     }
     #mainthird {
         background-color: var(--dark);
-    
+     display: flex;
+     flex-direction: column;
+     justify-content: top;
     }
     
     #thirdtop{
         width: 50%;
         height: 30vh;
+
         text-align:center;
         margin: auto;
-        padding-top: 20px;
         background-color: var(--dark);
     
     }
     
     #thirdbottom{
         width: 100%;
-        height: 40vh;
+        height: 70vh;
         text-align:center;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    
+
     }
     
     #thirdtop p:nth-child(1){
-        font-size: 1.4rem;
-        margin-top: 40px;
+        font-size: 1.3rem;
+        position: relative;
+        top: -50px;
+        /* margin-top: 40px; */
         color: var(--blue);
     }
     
     #thirdtop p:nth-child(3){
+        position: relative;
+        top: -75px;
         font-size: 1.4rem;
         margin-top: 40px;
         color: gray;
     }
     #thirdtop h1 {
         margin-top: 10px;
+        position: relative;
+        top: -50px;
         font-size: 2rem;
         color: white;
     }
@@ -693,9 +860,7 @@ section{
         font-size: 2rem;
         border-radius: 50%;
         background-color: var(--lightdark);
-        padding: 20px;
-        margin: 25px;
-    
+      
     }
     
     .cardthird h3{
@@ -727,6 +892,179 @@ section{
         position: relative;
         top: 80px;
     }
+    #mainfourth{
+        background-color: antiquewhite;
+        display: flex;
+
+    }
+    #fourthleft{
+        background-color: var(--dark);
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #fourthright{
+        background-color: var(--dark);
+        width: 50%;
+        text-align: center;
+        
+        /* padding: 200px 100px 200px 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #fourthright p:nth-child(1) {
+        font-size: 1.1rem;
+        color: var(--blue);
+        text-align: start;
+        margin-top: 20px;
+    }
+    #fourthright p:nth-child(3) {
+        font-size: 1.1rem;
+        margin-top: 20px;
+        color:gray;
+        text-align: start;
+    }
     
-     
+    #fourthright h1 {
+        margin-top: 20px;
+        font-size: 3rem;
+        text-align: start;
+        color: white;
+    }
+    #fourthleft img{
+        width: 110%;
+        /* height: 0%; */
+        position: relative;
+        top: -197px;
+    }
+    #fourthleft div{
+        width: 40%;
+        height: 60vh;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        background-color: var(--lightdark);
+        margin: auto;
+        position: relative;
+        top: 50px;
+
+    }
+
+    .dot1{
+        height: 55px;
+        width: 55px;
+        background-color: var(--blue);
+        border-radius: 50%;
+        display: inline-block;
+        
+    }
+    .dot1:nth-child(1)
+    {
+        position: relative;
+        top: 300px;
+        /* left: 100px; */
+        /* background-color: blue; */
+    }
+    .dot1:nth-child(2)
+    {
+        position: relative;
+        top: 10px;
+        right: 50px;
+        height: 20px;
+        width: 20px;
+        background-color: plum;
+        
+    
+    }
+    
+    .dot1:nth-child(3)
+    {
+        position: relative;
+        top: 0px;
+        left: 200px;
+        height: 40px;
+        width: 40px;
+        background-color: plum;
+    
+    }
+    .dot1:nth-child(4)
+    {
+        position: relative;
+        top: 150px;
+        left: 200px;
+        height: 30px;
+        width: 30px;
+        transition: all 2s;
+    }
+    table{
+        background-color: var(--dark);
+        margin-top: 20px;
+        
+    }
+    th {
+        color: var(--blue);
+        font-size: 1.5rem;
+        padding: 20px 20px 20px 0px;
+        text-align: left;
+        
+    }
+    
+    td {
+        color:gray;
+        padding: 0px 20px 0px 0px;
+        font-size: 1.5rem;
+        text-align: left;
+         
+    }
+  #fifthbottom{
+    background-color: var(--dark);
+    display: flex;
+     justify-content: start;
+     /* align-items: center; */
+     gap: 30px;
+     padding-left: 80px;
+     padding-top: 50px;
+  } 
+  #fifthbottom div {
+    background-color: var(--darklight);
+    width: 29%;
+    border-radius: 10px;
+
+  } 
+  #fifthbottom div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  #fifthbottom >  div > div {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .cardfifth h3{
+    color: white;
+    margin-bottom: 20px;
+  }
+  .cardfifth h5{
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .cardfifth {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  
+  .cardfifth p{
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
 }

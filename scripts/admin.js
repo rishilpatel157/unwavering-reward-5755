@@ -132,3 +132,5 @@ function inputs(div,inputs,className)
        
     }
 }
+
+console.log(api)

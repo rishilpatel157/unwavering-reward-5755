@@ -1,0 +1,40 @@
+#footer{
+    margin-top: 10px;
+    
+   }
+   #footer1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 10px;
+    background-color: rgb(60, 97, 97);
+    padding: 30px;
+}
+#footer a{
+    text-decoration: none;
+    color: rgb(215, 209, 209);
+}
+#footer2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 10px;
+    background-color: rgb(10, 65, 65);
+    padding: 30px; 
+}
+#footer p{
+    color: rgb(215, 209, 209); 
+}
+.foo1{
+    display: block;
+}
+#footer button{
+    background-color: orangered;
+    border: none;
+    color: azure;
+    font-size: 10px;
+}
+#footer3{
+    background-color: rgb(10, 65, 65);
+    padding-top: 5px;
+    display: flex;
+    padding-left: 100px;
+}

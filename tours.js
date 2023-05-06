@@ -1,4 +1,4 @@
-let dataAPI = {
+const dataAPI = {
     "rajastan": [
         {
             "stateName" : "Rajastan",
@@ -153,4 +153,41 @@ let dataAPI = {
     ]
 }
          
-console.log( dataAPI )  ;
+
+  
+
+const ul = document.getElementById("package-list")  ;
+
+
+window.addEventListener( "load" , function()
+{
+    // ul.innerHTML = null  ;
+
+    for( let key in dataAPI )
+    {
+        ul.append( display_card( dataAPI[key] ) ) ;
+    }
+}  )
+
+function display_card( data )
+{
+    const li = document.createElement("li")  ;
+
+    const package_card = document.createElement("div")  ;
+    package_card.className = "package-card"  ;
+
+    const figure = document.createElement("figure")  ;
+    figure.className = "card-banner"  ;
+
+    const img = document.createElement("img")  ;
+    img.src = data.cardbigImage  ;
+
+    figure.append( img )  ;
+   
+
+
+    package_card.append( figure )  ;
+    
+    li.append( package_card )  ;
+    return li  ;
+}

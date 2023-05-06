@@ -11,6 +11,11 @@ body {
 }
 /* /////////////////////////////////////////////////////////////////// */
 
+<<<<<<< HEAD
+=======
+/* /////////////////////////////////////////////////////////////////// */
+
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
 *{
     margin: 0px;
     padding: 0px;
@@ -352,9 +357,13 @@ section{
     gap: 30px;
     text-align: center;
     align-items: center;
+<<<<<<< HEAD
     /* padding-left: 80px; */
     cursor: pointer;
     /* background-color: antiquewhite; */
+=======
+    padding-left: 80px;
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
 }
 
 #secondtop h4{
@@ -533,6 +542,7 @@ section{
     top: 80px;
 }
 
+<<<<<<< HEAD
 #mainfourth{
     background-color: antiquewhite;
     display: flex;
@@ -716,6 +726,12 @@ margin-bottom: 20px;
 laptop ///////////////////////////////////////////////////////////////////////////////////////////
 laptop /////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width:1301px) and (max-width:2300px) {
+=======
+/* laptop ///////////////////////////////////////////////////////////////////////////////////////////
+laptop ///////////////////////////////////////////////////////////////////////////////////////////
+laptop /////////////////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width:1600px) {
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
     *{
         margin: 0;
         border: 0;
@@ -899,7 +915,6 @@ laptop /////////////////////////////////////////////////////////////////////////
        border-radius: 15px;
        width: 200px;
        height: 275px;
-    
     }
     
     
@@ -909,10 +924,12 @@ laptop /////////////////////////////////////////////////////////////////////////
         gap: 30px;
         text-align: center;
         align-items: center;
+
         overflow: hidden;
         /* padding-left: 80px; */
         
         
+        padding-left: 80px;
     }
     
     #secondtop h4{
@@ -1113,6 +1130,11 @@ laptop /////////////////////////////////////////////////////////////////////////
         background-color: var(--dark);
         width: 50%;
         text-align: center;
+<<<<<<< HEAD
+=======
+        
+        /* padding: 200px 100px 200px 100px; */
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1139,6 +1161,7 @@ laptop /////////////////////////////////////////////////////////////////////////
         color: white;
     }
     #fourthleft img{
+<<<<<<< HEAD
         width: 315px;
         /* height: 0%; */
         position: relative;
@@ -1148,14 +1171,28 @@ laptop /////////////////////////////////////////////////////////////////////////
     #fourthleft div{
         width: 40%;
         /* height: 60vh; */
+=======
+        width: 110%;
+        /* height: 0%; */
+        position: relative;
+        top: -197px;
+    }
+    #fourthleft div{
+        width: 40%;
+        height: 60vh;
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
         border-top-right-radius: 40px;
         border-top-left-radius: 40px;
         background-color: var(--lightdark);
         margin: auto;
         position: relative;
+<<<<<<< HEAD
         top: 20px;
 
 
+=======
+        top: 50px;
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
 
     }
 
@@ -1273,6 +1310,7 @@ laptop /////////////////////////////////////////////////////////////////////////
     margin-bottom: 20px;
   }
   
+<<<<<<< HEAD
 }
 /* ///////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
@@ -2818,4 +2856,6 @@ tablet */
     padding-top: 50px;
 }
 
+=======
+>>>>>>> 07be5adcc4594ce8ef003754eed6e6f58b803b60
 }

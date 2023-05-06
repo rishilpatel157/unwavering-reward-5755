@@ -1,40 +1,55 @@
 #footer{
-    margin-top: 10px;
+    width: 90%;
+    background-color: black;
+    color: rgb(230, 222, 222);
+    font-size: 17px;
     
-   }
-   #footer1{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    font-size: 10px;
-    background-color: rgb(60, 97, 97);
-    padding: 30px;
 }
-#footer a{
-    text-decoration: none;
-    color: rgb(215, 209, 209);
+p{
+    color: rgb(147, 147, 147);
+    font-size: 15px;
+}
+#p1{
+    padding-left: 60px;
+}
+#h1{
+    padding-left: 60px;
+}
+
+#footer{
+    display: flex;
+    margin: auto;
+    width: 90%;
 }
 #footer2{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    font-size: 10px;
-    background-color: rgb(10, 65, 65);
-    padding: 30px; 
+    grid-template-columns: repeat(3,1fr);
+
+    margin: auto;
 }
-#footer p{
-    color: rgb(215, 209, 209); 
+#last{
+    width: 90%;
+    margin: auto;
+    background-color: black;
+     
 }
-.foo1{
-    display: block;
+#last p{
+    color:rgb(147, 147, 147) ;
 }
-#footer button{
-    background-color: orangered;
-    border: none;
-    color: azure;
-    font-size: 10px;
+@media screen and (max-width:480px){
+    #footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        margin: auto;
+    }
 }
-#footer3{
-    background-color: rgb(10, 65, 65);
-    padding-top: 5px;
-    display: flex;
-    padding-left: 100px;
+
+@media screen  and (min-width:481px)and (max-width:768px){
+    #footer2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    
+        margin: auto;
+    }
 }

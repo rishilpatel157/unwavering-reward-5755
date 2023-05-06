@@ -154,7 +154,6 @@ const dataAPI = {
 }
          
 
-  
 
 const ul = document.getElementById("package-list")  ;
 
@@ -180,11 +179,12 @@ function display_card( data )
     figure.className = "card-banner"  ;
 
     const img = document.createElement("img")  ;
-    img.src = data.cardbigImage  ;
+    img.src = data[0].cardbigImage  ;
 
     figure.append( img )  ;
    
-
+    const card_content = document.createElement("div")  ;
+    card_content.className = "card-content"  ;
 
     package_card.append( figure )  ;
     

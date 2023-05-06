@@ -1,4 +1,9 @@
-
+:root{
+    --dark: rgb(17,19,20);
+    --lightdark : rgb(32,43,53);
+    --blue :  #3dc6ee;
+    --darklight : rgb(26,27,29);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -7,16 +12,16 @@
 }
 nav{
     height: 80px;
-    background-color: #111315;
+    background-color: var(--dark);
 }
 nav img{
-    width:60px;
+    width:225px;
     position: absolute;
-    top:10px;
-    left:7%;
+    top:15px;
+    left:20px;
 }
 nav ul{
-    /* position: fixed; */
+    
     float: right;
     margin-right: 20px;
 
@@ -27,9 +32,13 @@ nav ul li{
     line-height: 80px;
     margin: 0 15px;
 }
+.navtext:hover {
+    color: white;
+  }
+  
 nav ul li a{
     position: relative;
-    color: white;
+    color: gray;
     font-size: 19px;
     /* font-weight: bold; */
     padding: 5px 0;
@@ -50,7 +59,7 @@ nav ul li a:before{
     bottom: 0;
     height: 2px;
     width:100%;
-    background-color: #3dc6ee;
+    background-color: var(--blue);
     transform: scaleX(0);
     transform-origin:right;
     transition: transform 0.4s linear;
@@ -142,17 +151,86 @@ label #cancel{
     }
 
 }
+#mainheader{
+    background-color: var(--dark);
+}
 
 
+#footer{
+    width: 100%;
+    background-color: var(--dark);
+    color: rgb(230, 222, 222);
+    font-size: 17px;
+    
+}
+p{
+    color: rgb(147, 147, 147);
+    font-size: 15px;
+}
+#p1{
+    padding-left: 60px;
+}
+#h1{
+    padding-left: 60px;
+}
 
+#footer{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+#footer2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    margin: auto;
+}
+#last{
+    width: 100%;
+    margin: auto;
+    background-color: var(--dark);
+     
+}
+#last p{
+    color:rgb(147, 147, 147) ;
+}
+@media screen and (max-width:480px){
+    #footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        margin: auto;
+    }
+}
+
+@media screen  and (min-width:481px)and (max-width:768px){
+    #footer2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    
+        margin: auto;
+    }
+}
+
+#textlogin{
+    position: relative;
+    left: 70px;
+}
 
 #container {
-    width: 40%;
-    padding-top: 150px;
+    width: 30%;
+    /* padding-top: 150px; */
     margin: auto;
-  padding: 150px;
-  height: 90vh;
+  /* padding: 150px; */
+  /* height: 90vh; */
   text-align: center;
+  background-color: white;
+  
+}
+
+#container h1{
+    font-size: 2rem;
+    /* padding-left: 5px; */
 }
 
 #container > button {
@@ -169,27 +247,25 @@ label #cancel{
 #login {
     margin: auto;
     width: 100%;
-    padding: 50px;
-    
+   
     background-color: white;
-    height: 500px;
-    
+    height: 350px;
 }
 .loginwindow{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 30vh;
-    margin: auto;
+    /* height: 30vh; */
+    /* margin: auto; */
     justify-content: space-evenly;
     align-items: center;
-   width: 100%;
-   height: 100%;
+   /* width: 100%; */
+   /* height: 100%; */
    text-align: left;
    border: none;
    padding-bottom: 70px;
    border-radius: 5px;
-  
+  background-color: white;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   
    
@@ -228,21 +304,22 @@ input {
 .registerwindow {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 43vh;
+    /* flex-wrap: wrap; */
+    /* height: 4vh; */
     text-align: left;
     margin: auto;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: -48.5vh;
+    top: -56vh;
     margin-top: 50px;
     padding-bottom: 50px;
     border-radius: 5px;
   
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
- 
+ background-color: white;
+
     
     
  
@@ -271,7 +348,7 @@ flex-direction: column;
 }
 
 input {
-width: 275px;
+max-width: 300px;
 padding-left: 10px;
 height: 35px;
 border: none;
@@ -293,3 +370,24 @@ background-color: white;
 }
 
 
+
+@media only screen and (max-width:769px) {
+    .registerwindow {
+        position: relative;
+        right: 90px;
+        width: 300px;
+        top: -350px;
+    }
+    
+    .loginwindow{
+        width: 300px;
+        right: 90px;
+        position: relative;
+    }
+
+    #textlogin{
+        position: relative;
+        left: -50px;
+    }
+    
+}

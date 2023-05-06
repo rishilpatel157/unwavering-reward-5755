@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rishilpatel157/unwavering-reward-5755#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "json-server": "^0.17.3"
   }
 }

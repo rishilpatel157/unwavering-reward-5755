@@ -184,9 +184,9 @@ function display_card( data )
     const card_content = document.createElement("div")  ;
     card_content.className = "card-content"  ;
 
-    const h2 = document.createElement("div")  ;
-    h2.className = "h2 card-title"  ;
-    h2.textContent = data[0].cardTitle  ;
+    const h3 = document.createElement("div")  ;
+    h3.className = "h3 card-title"  ;
+    h3.textContent = data[0].cardTitle  ;
 
     const card_text = document.createElement("p")  ;
     card_text.className = "card-text"  ;
@@ -229,7 +229,7 @@ function display_card( data )
 
     card_meta_list.append( card_meta_item )  ;
 
-    card_content.append( h2 , card_text , card_meta_list )  ;
+    card_content.append( h3 , card_text , card_meta_list )  ;
 
     const card_price = document.createElement("div")  ;
     card_price.className = "card-price"  ;
@@ -239,7 +239,7 @@ function display_card( data )
 
     const price = document.createElement("p")  ;
     price.className = "price"  ;
-    price.textContent = data[0].cost  ;
+    price.textContent = `₹${data[0].cost}`  ;
 
 
     card_price.append( wrapper , price )  ;

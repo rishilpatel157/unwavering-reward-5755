@@ -202,11 +202,9 @@ body { background: var(--white); }
   background: var(--cultured);
   overflow: hidden;
   border-radius: 15px;
-  display: flex ;
-  width: 60%;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+    height: 30vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .package-card .card-banner { height: 250px; }

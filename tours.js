@@ -1,12 +1,12 @@
 const API = JSON.parse(localStorage.getItem("api")) || []  ;
 
-// console.log( API )  ;
 
 const ul = document.getElementById("package-list")  ;
 
 
 window.addEventListener( "load" , function()
 {
+
     display_card(API)
 }  )
 

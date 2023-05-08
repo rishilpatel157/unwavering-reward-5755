@@ -1,53 +1,50 @@
 const API = JSON.parse(localStorage.getItem("api")) || []  ;
 
-
 const ul = document.getElementById("package-list")  ;
-
 
 window.addEventListener( "load" , function()
 {
+    ul.innerHTML = null  ;
 
-    display_card(API)
+    for( let i = 0 ; i < API.length ; i++ )
+    {
+        ul.append( display_card( API[i] ) )  ;
+    }
 }  )
 
-let mainconatiner = document.getElementById("maincontainer")
 function display_card( data )
-{
-    mainconatiner.innerHTML = ""
-
-    data.forEach(element => {
+{    
+    const li = document.createElement("li")  ;
+    const package_card = document.createElement("div")  ;
+    package_card.className = "package-card"  ;
         
-        const li = document.createElement("li")  ;
-        const package_card = document.createElement("div")  ;
-        package_card.className = "package-card"  ;
-        
-        const figure = document.createElement("figure")  ;
-        figure.className = "card-banner"  ;
+    const figure = document.createElement("figure")  ;
+    figure.className = "card-banner"  ;
         
         
-        const img = document.createElement("img")  ;
-        img.src = element.cardImage  ;
+    const img = document.createElement("img")  ;
+    img.src = data.cardImage  ;
         
-        figure.append( img )  ;
+    figure.append( img )  ;
         
-        const card_content = document.createElement("div")  ;
-        card_content.className = "card-content"  ;
+    const card_content = document.createElement("div")  ;
+    card_content.className = "card-content"  ;
         
-        const h3 = document.createElement("div")  ;
-        h3.className = "h3 card-title"  ;
-        h3.textContent = element.cardTitle  ;
+    const h3 = document.createElement("div")  ;
+    h3.className = "h3 card-title"  ;
+    h3.textContent = data.cardTitle  ;
         
-        const card_text = document.createElement("p")  ;
-        card_text.className = "card-text"  ;
-        card_text.textContent = element.city  ;
+    const card_text = document.createElement("p")  ;
+    card_text.className = "card-text"  ;
+    card_text.textContent = data.city  ;
         
-        const card_meta_list = document.createElement("ul")  ;
-        card_meta_list.className = "card-meta-list"  ;
+    const card_meta_list = document.createElement("ul")  ;
+    card_meta_list.className = "card-meta-list"  ;
         
-        const card_meta_item = document.createElement("li")  ;
-        card_meta_item.className = "card-meta-item"  ;
+    const card_meta_item = document.createElement("li")  ;
+    card_meta_item.className = "card-meta-item"  ;
         
-        const meta_box = document.createElement("div")  ;
+    const meta_box = document.createElement("div")  ;
     meta_box.className = "meta-box"  ;
     
     const ion_icon =  document.createElement("ion-icon")  ;
@@ -55,7 +52,7 @@ function display_card( data )
     
     const time =  document.createElement("p")  ;
     time.className = "text"  ;
-    time.textContent = element.period  ;
+    time.textContent = data.period  ;
     
     meta_box.append( ion_icon , time )  ;
     
@@ -87,7 +84,7 @@ function display_card( data )
     
     const price = document.createElement("p")  ;
     price.className = "price"  ;
-    price.textContent = `₹${element.cost}`  ;
+    price.textContent = `₹${data.cost}`  ;
     
     
     card_price.append( wrapper , price )  ;
@@ -95,8 +92,6 @@ function display_card( data )
     package_card.append( figure , card_content , card_price )  ;
     
     li.append( package_card )  ;
-    console.log(package_card)
-    mainconatiner.append(package_card)
+
     return li  ;
-});
 }

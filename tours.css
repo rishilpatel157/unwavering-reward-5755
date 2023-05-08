@@ -1,4 +1,6 @@
 
+
+
 /*-----------------------------------*\
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -427,7 +429,7 @@ label #cancel{
 }
 
 /*-----------------------------------*\
- * #media queries
+ * #media queries extra
 \*-----------------------------------*/
 
 @media (min-width: 300px) {
@@ -485,4 +487,60 @@ label #cancel{
   }
 
   .package-card .card-price .wrapper { margin-bottom: 15px; }
+}
+
+/*-----------------------------------*\
+ * footer
+\*-----------------------------------*/
+
+p #footer{
+  color: rgb(147, 147, 147);
+  font-size: 15px;
+}
+#p1 #footer{
+  padding-left: 60px;
+}
+#h1 #footer{
+  padding-left: 60px;
+}
+
+#footer{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  background-color: black;
+  color: rgb(230, 222, 222);
+  font-size: 17px; 
+}
+#footer2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  margin: auto;
+}
+#last{
+  width: 100%;
+  margin: auto;
+  background-color: black;
+   
+}
+#last p #footer{
+  color:rgb(147, 147, 147) ;
+}
+@media screen and (max-width:480px){
+  #footer2{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  
+      margin: auto;
+  }
+}
+
+@media screen  and (min-width:481px)and (max-width:768px){
+  #footer2{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+  
+      margin: auto;
+  }
 }

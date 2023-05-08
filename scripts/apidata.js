@@ -318,5 +318,5 @@ let dataAPI = JSON.parse(localStorage.getItem("api"))||[]
       "id": 20
     }
   ]
-  console.log(dataAPI)
+  
 localStorage.setItem("api",JSON.stringify(dataAPI))

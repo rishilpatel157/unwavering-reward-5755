@@ -203,6 +203,10 @@ body { background: var(--white); }
   overflow: hidden;
   border-radius: 15px;
   display: flex ;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .package-card .card-banner { height: 250px; }

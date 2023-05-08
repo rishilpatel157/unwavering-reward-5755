@@ -105,7 +105,11 @@ form.addEventListener("submit",function(e){
       let button = document.createElement("button")
       button.innerText = "Submit"
       div.append(state,titledis,imgdis,citiesdis,costdis,perioddis,imgbigdis,overviewdis,highhead,dayshead,button) 
-      let obj = {}
+      
+     button.addEventListener("click",function(){
+         if(confirm("Do you want to add data")==true)
+         {
+            let obj = {}
       
       obj.stateName = states.value
       obj.cardTitle = cardTitle.value
@@ -118,14 +122,12 @@ form.addEventListener("submit",function(e){
       obj.tripHighlights = highlightsArr
       obj.days = daysArr
       
-     button.addEventListener("click",function(){
-         if(confirm("Do you want to add data")==true)
-         {
-             api.push(obj)
+
+            dataAPI.push(obj)
             document.getElementById("form").reset()
             container.innerHTML = ""
              console.log(api)
-             localStorage.setItem("api",JSON.stringify(api))
+             localStorage.setItem("api",JSON.stringify(dataAPI))
             }
             container.style.display = "none"
         })

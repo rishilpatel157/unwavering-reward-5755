@@ -190,7 +190,7 @@ function display_card( data )
 
     const card_text = document.createElement("p")  ;
     card_text.className = "card-text"  ;
-    card_text.textContent = data[0].tripHighlights  ;
+    card_text.textContent = data[0].city  ;
 
     const card_meta_list = document.createElement("ul")  ;
     card_meta_list.className = "card-meta-list"  ;

@@ -1,24 +1,282 @@
+:root{
+    --dark: rgb(17,19,20);
+    --lightdark : rgb(32,43,53);
+    --blue :  #3dc6ee;
+    --darklight : rgb(26,27,29);
+}
+:root{
+    --dark: rgb(17,19,20);
+    --lightdark : rgb(32,43,53);
+    --blue :  #3dc6ee;
+    --darklight : rgb(26,27,29);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    background-color: var(--dark);
+}
+nav img{
+    width:225px;
+    position: absolute;
+    top:15px;
+    left:20px;
+}
+nav ul{
+    
+    float: right;
+    margin-right: 20px;
 
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+.navtext:hover {
+    color: white;
+  }
+  
+nav ul li a{
+    position: relative;
+    color: gray;
+    font-size: 19px;
+    /* font-weight: bold; */
+    padding: 5px 0;
+}
+.getStart{
+    font-size: 19px;
+    padding: 5px 15px;
+    background-color:#3dc6ee ;
+    /* font-weight: bold; */
+    border-radius: 12px;
+    border:none ;
+   
+}
+nav ul li a:before{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width:100%;
+    background-color: var(--blue);
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.4s linear;
 
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin:left;
+  
+}
+
+nav ul li a > .getStart:before{
+    position: absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width:100%;
+    background-color:white;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.4s linear;
+
+}
+
+nav ul li a >.getStart:hover:before{
+    transform: scaleX(1);
+    transform-origin:left;
+  
+}
+
+label #btn,
+label #cancel{
+    color:white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+
+}
+
+@media (max-width:950px){
+
+    nav ul li a{
+        font-size: 17px;
+        /* position: ; */
+    }
+    
+}
+
+@media (max-width:769px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background-color: #111315;
+        top:80px;
+        left:100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+}
+body{
+    background-color: var(--dark);
+}
 main{
     display: flex;
+
+    width: 100%;
+    align-items: self-start;
+    justify-content: space-between;
+    background-color: var(--dark);
 }
 form{
-    width: 30%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     
     justify-content: center;
     align-items: center;
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: var(--lightdark);
 }
 
-
+input:focus {
+    background-color: white;
+    color: black;
+    }
 form label {
     margin: 10px 0 0 0 ;
+    color: white;
 } 
 
 #containerdays{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
+}
+
+#containerhighlight{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input {
+    max-width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--darklight);
+    color: white;
+    height: 20px;
+    
+    
+}
+input:focus {
+    background-color: white;
+    }
+    
+    
+textarea{
+    border: none;
+    scroll-behavior: smooth;
+    background-color: var(--darklight);
+    color: white;
+
+}
+select{
+    background-color: var(--darklight);
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+#container {
+    max-width: 68%;
+    padding: 30px;
+    background-color: var(--lightdark);
+    display:none;
+   text-align: center;
+   margin-left: 20px;
+   border-radius: 10px;
+ 
+}
+
+
+button {
+    width: 100px;
+    background-color: var(--blue);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 17px
+}
+button:hover{
+    background-color: var(--dark);
+    color: var(--blue);
+}
+
+#container h4{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#container p{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+#container img{
+    border-radius: 5px;
+}
+
+#cardLargeImg{
+    max-width: 90%;
+    margin: auto;
 }

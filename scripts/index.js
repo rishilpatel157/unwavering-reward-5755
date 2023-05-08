@@ -1,5 +1,6 @@
 let carousel = document.getElementById("secondbottom")
 let carousel1 = document.getElementById("fifthbottom")
+let API = JSON.parse(localStorage.getItem("api"))||[]
 
 
 let isdragstart = false,prevpageX , prevScrollLeft;
@@ -48,3 +49,6 @@ carousel1.addEventListener("touchend",dragstop)
 carousel1.addEventListener("touchstart",function(){
     console.log("fifthbottom")
 })
+
+
+console.log(API)

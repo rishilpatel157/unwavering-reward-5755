@@ -20,7 +20,18 @@ highlight.addEventListener("change",function(){
     inputs(containerhighlight,highlight.value,"inphighlight")
 })
 days.addEventListener("change",function(){
-       inputs(containerdays,days.value*2,"inpdays")
+
+       containerdays.textContent = ""
+    for(let i = 0;i<days.value*2;i++)
+    {
+        
+        let inp = document.createElement("input")
+        inp.setAttribute("class","inpdays")
+        inp.setAttribute("placeholder",`Day :- ${Math.floor(i/2)+1}`)
+        inp.setAttribute("required","")
+        containerdays.append(inp)
+       
+    }
    })
    
     var api = dataAPI
@@ -35,6 +46,7 @@ form.addEventListener("submit",function(e){
 
    function display(div)
    {
+    container.style.display = "block"
     div.innerHTML = null
         
      let state = document.createElement("h4")
@@ -57,6 +69,7 @@ form.addEventListener("submit",function(e){
       
       let imgbigdis = document.createElement("img")
       imgbigdis.setAttribute("src",cardLargeImg.value)
+      imgbigdis.setAttribute("id","cardLargeImg")
 
      let overviewdis = document.createElement("p")
      overviewdis.innerText = `Tour Overview :- ${overview.value}`
@@ -64,7 +77,7 @@ form.addEventListener("submit",function(e){
      let highdis = document.querySelectorAll(".inphighlight")
 
      let highhead = document.createElement("h4")
-     highhead.innerText = "Tour Hightlighs"
+     highhead.innerText = "trip Hightlighs"
   let highlightsArr = []
       for(let i = 0;i<highlight.value;i++)
       {
@@ -76,10 +89,11 @@ form.addEventListener("submit",function(e){
 
       let daysdis = document.querySelectorAll(".inpdays")
       let dayshead = document.createElement("h4")
-         dayshead.innerText = "days"
+         dayshead.innerText = "Itinerary Details"
          dayshead.setAttribute("id","dayshead")
 
          let daysArr = []
+
       for(let i = 0;i<days.value*2;i++)
       {
                   
@@ -113,7 +127,7 @@ form.addEventListener("submit",function(e){
              console.log(api)
              localStorage.setItem("api",JSON.stringify(api))
             }
-            
+            container.style.display = "none"
         })
         
     }
@@ -124,6 +138,7 @@ function inputs(div,inputs,className)
     div.innerHTML = ""
     for(let i = 0;i<Number(inputs);i++)
     {
+        
         let inp = document.createElement("input")
         inp.setAttribute("class",className)
         inp.setAttribute("placeholder",i+1)

@@ -1,23 +1,34 @@
-function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    let admin = JSON.parse(localStorage.getItem("admin"))|| null
+
+    let form = document.querySelector("form")
   
-    // Show the overlay and loader
-    document.querySelector(".overlay").style.display = "flex";
-  
-    // Simulate a delay to simulate a login process
-    setTimeout(function() {
-      // Check if the username and password are correct
-      if (username === "admin" && password === "password") {
-        alert("Login successful!");
-        // Redirect to the admin dashboard or do whatever else is needed for the admin interface
-      } else {
-        alert("Invalid username or password!");
+     form.addEventListener("submit",function(e){
+      e.preventDefault()
+      if (username.value === "rishil" && password.value === "password") {
+     
+         admin = true
+         localStorage.setItem("admin",JSON.stringify(admin))
+         alert("Login successful!");
+         
+        } else {
+          alert("Invalid username or password!");
+        }
+      })
+   let adminnav = document.getElementById("adminname")
+      if(admin)
+      {
+        adminnav.innerText = "Admin"
       }
-      // Hide the overlay and loader
-      document.querySelector(".overlay").style.display = "none";
-    }, 3000);
-  }
+      else
+      {
+        adminnav.innerText = "Login As Admin"
+      }
+  
+
+
   
  
  

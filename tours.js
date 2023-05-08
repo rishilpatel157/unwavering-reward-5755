@@ -1,13 +1,11 @@
 const dataAPI = JSON.parse( localStorage.getItem("api") ) || []  ;
 
-console.log( dataAPI )  ;
-
 const ul = document.getElementById("package-list")  ;
 
 
 window.addEventListener( "load" , function()
 {
-    // ul.innerHTML = null  ;
+    ul.innerHTML = null  ;
 
     for( let key in dataAPI )
     {

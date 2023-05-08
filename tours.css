@@ -426,10 +426,14 @@ label #cancel{
     }
 }
 
-@media (min-width: 480px) {
+/*-----------------------------------*\
+ * #media queries
+\*-----------------------------------*/
+
+@media (min-width: 300px) {
 
   .container {
-    max-width: 580px;
+    max-width: 1050px;
     margin-inline: auto;
   }
 
@@ -448,15 +452,14 @@ label #cancel{
 
 }
 
-
-@media (min-width: 780px) {
+@media (min-width: 300px) {
 
   :root {
     --fs-5: 15px;
   }
 
   
-  .container { max-width: 800px; }
+  .container { max-width: 1050px; }
 
   .section-text {
     max-width: 60ch;

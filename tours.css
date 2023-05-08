@@ -205,6 +205,8 @@ body { background: var(--white); }
     height: 30vh;
     margin-top: 30px;
     margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .package-card .card-banner { height: 250px; }
@@ -310,7 +312,12 @@ body { background: var(--white); }
 /*-----------------------------------*\
  * #navbar
 \*-----------------------------------*/
-
+:root{
+  --dark: rgb(17,19,20);
+  --lightdark : rgb(32,43,53);
+  --blue :  #3dc6ee;
+  --darklight : rgb(26,27,29);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -319,7 +326,7 @@ body { background: var(--white); }
 }
 nav{
     height: 80px;
-    background-color: #111315;
+    background-color: var(--dark);
 }
 nav img{
     height: 30px;

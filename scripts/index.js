@@ -50,5 +50,9 @@ carousel1.addEventListener("touchstart",function(){
     console.log("fifthbottom")
 })
 
+let search = document.getElementById("searchbtn")
+search.addEventListener("click",function(){
+    window.location.href = `http://127.0.0.1:5501/tours.html`
+})
 
 console.log(API)

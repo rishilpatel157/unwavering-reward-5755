@@ -280,3 +280,7 @@ button:hover{
     max-width: 90%;
     margin: auto;
 }
+
+#show{
+    background-color: aliceblue;
+}

@@ -55,4 +55,26 @@ search.addEventListener("click",function(){
     window.location.href = `http://127.0.0.1:5501/tours.html`
 })
 
-console.log(API)
+
+
+const observer = new IntersectionObserver((entires)=>{
+    entires.forEach((entry)=>{
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add('show')
+        }
+        else
+        {
+            entry.target.classList.remove('show')
+            
+        }
+})
+
+
+})
+const hidden = document.querySelectorAll('.hidden')
+
+hidden.forEach((el)=>observer.observe(el))
+
+let cardhidden = document.querySelectorAll(".card .hidden")
+console.log(cardhidden)

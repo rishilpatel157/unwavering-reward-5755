@@ -2933,3 +2933,32 @@ p{
     border-radius: 10px;
     height: 30px;
 }
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show   {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+
+}
+
+.card .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.card .show   {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    
+}

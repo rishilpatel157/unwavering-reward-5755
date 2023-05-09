@@ -9,26 +9,18 @@
       e.preventDefault()
       if (username.value === "rishil" && password.value === "password") {
      
-         admin = true
          localStorage.setItem("admin",JSON.stringify(admin))
          alert("Login successful!");
+         window.location.href = './admin.html'
          
         } else {
           alert("Invalid username or password!");
         }
       })
-   let adminnav = document.getElementById("adminname")
-      if(admin)
-      {
-        adminnav.innerText = "Admin"
-      }
-      else
-      {
-        adminnav.innerText = "Login As Admin"
-      }
+ 
   
 
 
   
  
- 
+ console.log(admin)

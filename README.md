@@ -1,20 +1,12 @@
 # unwavering-reward-5755
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Unwavering Reward aims to provide a refreshing and engaging experience for our users. It focuses on delivering a seamless and enjoyable experience through animations and a user-friendly interface.
 
 ## Introduction
 
-Unwavering Reward is a travel website application designed to enhance user satisfaction and experience. It offers a wide range of tours. The project is built using HTML5 , CSS And Javascript.
+Unwavering Reward is a travel website designed to enhance user satisfaction and experience. It offers a wide range of tours. The project is built using HTML5, CSS and Javascript.
 
 
-## Installation
+## Installation and usage 
 
 To install and run Unwavering Reward locally, follow these steps:
 
@@ -52,13 +44,6 @@ To install and run Unwavering Reward locally, follow these steps:
 
 7. Access the application in your web browser at `http://localhost:3000`.
 
-## Usage
-
-To use Unwavering Reward, you can follow these steps:
-
-1. Register a new user account using the provided registration form.
-
-2. Log in to your account using your credentials.
 
 
 

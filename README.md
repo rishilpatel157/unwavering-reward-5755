@@ -52,7 +52,6 @@ To install and run Unwavering Reward locally, follow these steps:
 
 7. Access the application in your web browser at `http://localhost:3000`.
 
-To create documentation for a travel website, you should consider including the following sections:
 
 1. Introduction:
    - Overview of the travel website and its purpose.

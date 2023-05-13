@@ -1,5 +1,13 @@
 # unwavering-reward-5755
 Unwavering Reward aims to provide a refreshing and engaging experience for our users. It focuses on delivering a seamless and enjoyable experience through animations and a user-friendly interface.
+We are travel agency giving your marvelous experience. So, get
+your ticket with low price to your favorite destination.
+
+team members 
+
+Rishil patel -  fw26_029
+
+Anshul Agrawal -   fw26_186
 
 ## Introduction
 
@@ -44,6 +52,41 @@ To install and run Unwavering Reward locally, follow these steps:
 
 7. Access the application in your web browser at `http://localhost:3000`.
 
+To create documentation for a travel website, you should consider including the following sections:
+
+1. Introduction:
+   - Overview of the travel website and its purpose.
+   - Target audience and user personas.
+
+2. Getting Started:
+   - System requirements and supported browsers.
+   - Registration and account creation process.
+   - User authentication and login.
+
+3. User Interface:
+   - Navigation structure and menu options.
+   - Display of search results and listings.
+   - Booking process and payment options.
+   - User profile management.
+
+4. Features and Functionality:
+   - Detailed description of each feature offered by the website, such as:
+     - Vacation packages
+     - Activities and tours
+     - Reviews and ratings
+     - Trip planning tools
+     - Travel guides and recommendations
+     - User-generated content (photos, videos, blogs)
+  
+5. Admin Panel:
+   - Overview of the admin panel and its functionalities.
+   - User and content management.
+   - Booking management and reporting.
+   - Analytics and insights.
+
+
+6. Version History:
+    - Summary of major updates and changes made to the website.
 
 
 

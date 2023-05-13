@@ -52,6 +52,8 @@ To install and run Unwavering Reward locally, follow these steps:
 
 7. Access the application in your web browser at `http://localhost:3000`.
 
+## Website Overview
+
 
 1. Introduction:
    - Overview of the travel website and its purpose.
